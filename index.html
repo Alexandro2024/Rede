@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Onli</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Banner */
+        .banner {
+            background: url('banner.png') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner p {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        /* Conteúdo */
+        .content {
+            padding: 20px;
+        }
+
+        .category {
+            margin-top: 40px;
+        }
+
+        .category h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .movie-grid {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .movie {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            width: 200px;
+        }
+
+        .movie img {
+            width: 100%;
+            border-bottom: 2px solid #555;
+            cursor: pointer;
+        }
+
+        .movie h3 {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .movie p {
+            padding: 0 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Ajustes responsivos */
+        @media (min-width: 768px) {
+            .movie-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                overflow: visible;
+            }
+        }
+
+        /* Estilo para a barra de rolagem no carrossel */
+        .movie-grid::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .movie-grid::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Filmes Online</h1>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Assista os Melhores Filmes!</h2>
+        <p>Qualidade, variedade e entretenimento para você e sua família.</p>
+    </div>
+
+    <!-- Conteúdo de filmes por categorias -->
+    <div class="content">
+        <!-- Categoria 1: Aventura -->
+        <div class="category">
+            <h2>Aventura</h2>
+            <div class="movie-grid">
+                <!-- Filmes de Aventura -->
+                <!-- Substituir 'filmeX.html' pelo nome correto do arquivo e a imagem da capa -->
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/bala%20perdida%202.mp4"><img src="Bala perdida 2.png" alt="Filme 1"></a>
+                    <h3>Bala Perdida 2</h3>
+                    <p><strong>Sinopse:</strong> Um jovem embarca em uma jornada épica para salvar o mundo.</p>
+                    <p><strong>Duração:</strong> 2h 20min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/OMERCENARIOS32014LEG-BAIXO.mp4"><img src="os mercenários 3.png" alt="Filme 2"></a>
+                    <h3>Filme 2</h3>
+                    <p><strong>Sinopse:</strong> Em um futuro distópico, uma heroína luta contra um regime opressor.</p>
+                    <p><strong>Duração:</strong> 1h 45min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/22DEJULHODUB-BAIXO.mp4"><img src="22 de julho.png" alt="Filme 3"></a>
+                    <h3>Filme 3</h3>
+                    <p><strong>Sinopse:</strong> Aventura em terras desconhecidas com criaturas místicas.</p>
+                    <p><strong>Duração:</strong> 2h 00min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/ESCURIDAOMORTALDUB-BAIXO.mp4"><img src="escuridão mortal (1).png" alt="Filme 4"></a>
+                    <h3>Filme 4</h3>
+                    <p><strong>Sinopse:</strong> Um arqueólogo enfrenta armadilhas antigas em busca de um artefato.</p>
+                    <p><strong>Duração:</strong> 2h 10min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/Ca%C3%A7ando%20Ava%20Bravo.mp4"><img src="caçando ava bravo (1).png" alt="Filme 5"></a>
+                    <h3>Filme 5</h3>
+                    <p><strong>Sinopse:</strong> Aventura na selva com perigos e desafios inesperados.</p>
+                    <p><strong>Duração:</strong> 2h 30min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/ESCURIDAOMORTALDUB-BAIXO.mp4"><img src="escuridão mortal (1).png" alt="Filme 6"></a>
+                    <h3>Filme 6</h3>
+                    <p><strong>Sinopse:</strong> Uma missão espacial arriscada para explorar um planeta desconhecido.</p>
+                    <p><strong>Duração:</strong> 1h 55min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/furia%20assacina.mp4"><img src="furia assassina.png" alt="Filme 7"></a>
+                    <h3>Filme 7</h3>
+                    <p><strong>Sinopse:</strong> Uma jornada épica nas profundezas do oceano em busca de um tesouro.</p>
+                    <p><strong>Duração:</strong> 2h 15min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/Megaquake.mp4"><img src="Megaquake.png" alt="Filme 8"></a>
+                    <h3>Filme 8</h3>
+                    <p><strong>Sinopse:</strong> Uma tripulação luta para sobreviver em um planeta hostil.</p>
+                    <p><strong>Duração:</strong> 2h 05min</p>
+                </div>
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/OMERCENARIOS32014LEG-BAIXO.mp4"><img src="os mercenários 3.png" alt="Filme 9"></a>
+                    <h3>Filme 9</h3>
+                    <p><strong>Sinopse:</strong> Um jovem piloto se envolve em uma guerra intergaláctica.</p>
+                    <p><strong>Duração:</strong> 2h 25min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme10.html"><img src="rim of.png" alt="Filme 10"></a>
+                    <h3>Filme 10</h3>
+                    <p><strong>Sinopse:</strong> Aventura em terras mágicas com dragões e feiticeiros.</p>
+                    <p><strong>Duração:</strong> 2h 20min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme11.html"><img src="https://via.placeholder.com/200x300" alt="Filme 11"></a>
+                    <h3>Filme 11</h3>
+                    <p><strong>Sinopse:</strong> Um aventureiro solitário enfrenta perigos em uma ilha deserta.</p>
+                    <p><strong>Duração:</strong> 2h 30min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme12.html"><img src="https://via.placeholder.com/200x300" alt="Filme 12"></a>
+                    <h3>Filme 12</h3>
+                    <p><strong>Sinopse:</strong> Exploradores desvendam mistérios em uma cidade perdida.</p>
+                    <p><strong>Duração:</strong> 2h 40min</p>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- Conteúdo de filmes por categorias -->
+    <div class="content">
+        <!-- Categoria 1: Aventura -->
+        <div class="category">
+            <h2>Aventura</h2>
+            <div class="movie-grid">
+                <!-- Filmes de Aventura -->
+                <!-- Substituir 'filmeX.html' pelo nome correto do arquivo e a imagem da capa -->
+                <div class="movie">
+                    <a href="https://liveestacio-my.sharepoint.com/personal/202409249687_alunos_estacio_br/Documents/bala%20perdida%202.mp4"><img src="Bala perdida 2.png" alt="Filme 1"></a>
+                    <h3>Bala Perdida 2</h3>
+                    <p><strong>Sinopse:</strong> Um jovem embarca em uma jornada épica para salvar o mundo.</p>
+                    <p><strong>Duração:</strong> 2h 20min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme2.html"><img src="https://via.placeholder.com/200x300" alt="Filme 2"></a>
+                    <h3>Filme 2</h3>
+                    <p><strong>Sinopse:</strong> Em um futuro distópico, uma heroína luta contra um regime opressor.</p>
+                    <p><strong>Duração:</strong> 1h 45min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme3.html"><img src="https://via.placeholder.com/200x300" alt="Filme 3"></a>
+                    <h3>Filme 3</h3>
+                    <p><strong>Sinopse:</strong> Aventura em terras desconhecidas com criaturas místicas.</p>
+                    <p><strong>Duração:</strong> 2h 00min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme4.html"><img src="https://via.placeholder.com/200x300" alt="Filme 4"></a>
+                    <h3>Filme 4</h3>
+                    <p><strong>Sinopse:</strong> Um arqueólogo enfrenta armadilhas antigas em busca de um artefato.</p>
+                    <p><strong>Duração:</strong> 2h 10min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme5.html"><img src="https://via.placeholder.com/200x300" alt="Filme 5"></a>
+                    <h3>Filme 5</h3>
+                    <p><strong>Sinopse:</strong> Aventura na selva com perigos e desafios inesperados.</p>
+                    <p><strong>Duração:</strong> 2h 30min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme6.html"><img src="https://via.placeholder.com/200x300" alt="Filme 6"></a>
+                    <h3>Filme 6</h3>
+                    <p><strong>Sinopse:</strong> Uma missão espacial arriscada para explorar um planeta desconhecido.</p>
+                    <p><strong>Duração:</strong> 1h 55min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme7.html"><img src="https://via.placeholder.com/200x300" alt="Filme 7"></a>
+                    <h3>Filme 7</h3>
+                    <p><strong>Sinopse:</strong> Uma jornada épica nas profundezas do oceano em busca de um tesouro.</p>
+                    <p><strong>Duração:</strong> 2h 15min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme8.html"><img src="https://via.placeholder.com/200x300" alt="Filme 8"></a>
+                    <h3>Filme 8</h3>
+                    <p><strong>Sinopse:</strong> Uma tripulação luta para sobreviver em um planeta hostil.</p>
+                    <p><strong>Duração:</strong> 2h 05min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme9.html"><img src="https://via.placeholder.com/200x300" alt="Filme 9"></a>
+                    <h3>Filme 9</h3>
+                    <p><strong>Sinopse:</strong> Um jovem piloto se envolve em uma guerra intergaláctica.</p>
+                    <p><strong>Duração:</strong> 2h 25min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme10.html"><img src="https://via.placeholder.com/200x300" alt="Filme 10"></a>
+                    <h3>Filme 10</h3>
+                    <p><strong>Sinopse:</strong> Aventura em terras mágicas com dragões e feiticeiros.</p>
+                    <p><strong>Duração:</strong> 2h 20min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme11.html"><img src="https://via.placeholder.com/200x300" alt="Filme 11"></a>
+                    <h3>Filme 11</h3>
+                    <p><strong>Sinopse:</strong> Um aventureiro solitário enfrenta perigos em uma ilha deserta.</p>
+                    <p><strong>Duração:</strong> 2h 30min</p>
+                </div>
+                <div class="movie">
+                    <a href="filme12.html"><img src="https://via.placeholder.com/200x300" alt="Filme 12"></a>
+                    <h3>Filme 12</h3>
+                    <p><strong>Sinopse:</strong> Exploradores desvendam mistérios em uma cidade perdida.</p>
+                    <p><strong>Duração:</strong> 2h 40min</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Outras categorias (ação, comédia, drama, terror) seguem a mesma estrutura -->
+        <!-- Você pode adicionar outras categorias e filmes da mesma forma. Apenas continue o padrão -->
+
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>© 2024 Filmes Online - Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>
